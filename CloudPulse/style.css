@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend" , sans-serif;
+}
+html,body{
+    height: 100% ;
+    width: 100% ;
+}
+main{
+   min-height: 100vh;
+    width: 100% ;
+    
+    background-color: #caf0f8;
+    background-image: url(https://images.unsplash.com/photo-1580193769210-b8d1c049a7d9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdlYXRoZXJ8ZW58MHx8MHx8fDA%3D);
+   background-size: cover;
+    background-position: center;
+     justify-content: center;
+    padding: 8px 8px;
+}
+
+#searchbar{
+    width: 100% ;
+    height: 55px;
+    background-color: rgb(1, 1, 1 , .5);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+
+#heading h2{
+    padding-top: 4px;
+    color: white;
+}
+
+#logo{
+    display: flex;
+    gap: 4.5px;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 3px;
+}
+
+#i2,#i3{
+    width: 2.4em;
+}
+#github{
+    width:2.2em;
+}
+#logo a{
+    padding-left: 8px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+#searchbox{
+     width: 18vw;
+     height: 5.2vh;
+     border-radius: 10px;
+    background-color: white;
+}
+
+#searchbar input{
+    width: 100% ;
+    height: 100% ;
+   border-radius: 10px;
+   box-sizing: border-box;
+   background-color: white;
+    text-align: left;
+    padding-left: 30px;
+    background-color: transparent;
+    font-size: 1.15rem;
+    border: none;
+}
+#searchbox i{
+    position: relative;
+    left: 8px;
+    bottom: 29px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#card-container{
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+#card{
+    width: 90%;
+    max-width: 1000px;
+   /* height: 70vh; */
+    background-color: rgb(1, 1, 1, .5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+#time-date{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding: 15px 20px;
+    color: whitesmoke;
+}
+#weather-details{
+    
+    flex: 1 1 60px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+.Clouds , .Humidity , .Sunrise , .Sunset{
+    padding: 10px 0;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.Wind{
+    padding: 10px 0;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.title-logo, .title-logo1 {
+  display: flex;
+  gap: 10px;
+  font-size: 1.2em;
+  color: white;
+}
+
+.c1 , .c2 ,.c3,.c4,.c5{
+    padding-right: 6px;
+}
+#weather-info{
+    
+    flex : 1 1 250px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+#weather-info img{
+    max-width: 250px;
+     
+     transform: rotate(5deg);
+}
+#info-text{
+   
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+   
+    color: white;
+  
+}
+#info-text h6{
+font-size: 3em;
+}
+@media (max-width:768px) {
+
+    #card{
+        flex-direction: column;
+        align-items: center;
+    }
+    #weather-info,#weather-details,#info-text{
+        width: 100% ;
+        text-align: center;
+    }
+    #searchbox{
+        width: 70vw;
+        height: 38px;
+    }
+    #searchbar {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+  }
+}
